@@ -1,0 +1,97 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fff;
+	font-family: GothamProRegular;
+	font-size: 16px;
+	overflow-x: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+}
+
+.clearfix {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+h1,
+h2, 
+h3 {
+	margin: 0;
+	padding: 0;
+	font-family: GothamProMedium;
+	text-align: center;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 50px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+.button {
+	padding: 15px;
+	border: 4px solid #f15151;
+	background: transparent;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.5s ease;
+	outline: none;
+
+	&:hover {
+		background: #f15151;
+	}
+}
+
+.button_full {
+	background-color: #f15151;
+
+	&:hover {
+		border: 4px solid black; 
+	}
+}
+
+.wrapper {
+	width: 1160px;
+	margin: 0 auto;
+
+	@media (max-width: 1200px) {
+		width: 800px;
+	}
+
+	@media (max-width: 800px) {
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+
+.bg_top {
+	background-image: url('../images/bg_top.jpg');
+	background-position: 50% 0;
+	background-size: auto 100%;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.visible {
+	opacity: 1;
+}

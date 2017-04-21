@@ -1,0 +1,383 @@
+.order {
+	padding-top: 100px;
+	padding-bottom: 80px;
+	text-align: center;
+
+	h2 {
+		position: relative;
+		margin-bottom: 90px;
+		text-transform: uppercase;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: -10px;
+			transform: translatex(-50%);
+			width: 200px;
+			height: 3px;
+			background-color: #f15151;
+		}
+	}
+ 
+	.instructions {
+		position: relative;
+		display: inline-block;
+		width: 165px;
+		padding-top: 90px;
+		margin-right: 161px;
+		margin-bottom: 80px;
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+		line-height: 22px;
+		text-align: center;
+		vertical-align: top;
+
+		&:nth-of-type(4n) {
+			margin-right: 0;
+		}
+
+		@media (max-width: 800px) {
+			&:nth-of-type(2n) {
+					margin-right: 0;
+				}
+		}
+
+		@media (max-width: 1200px) {
+			width: 150px;
+			padding-top: 60px;
+			margin-right: 60px;
+			margin-bottom: 50px;
+			background-size: 25%;
+		}
+
+		@media (max-width: 520px) {
+			width: 100%;
+			margin-right: 0;
+			background-size: 15%;
+		}
+	}
+
+	.button {
+		margin-top: 20px;
+		font-size: 15px;
+		padding-left: 25px;
+		padding-right: 25px;
+
+		@media (max-width: 1200px) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		@media (max-width: 520px) {
+			display: block;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+	}
+
+	.instruction1 {
+		background-image: url('../images/lamp.png');
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 18px;
+			left: 270px;
+			width: 15px;
+			height: 15px;
+			border-top: 2px solid #d1d1d1;
+			border-right: 2px solid #d1d1d1;
+			transform: rotate(45deg);
+
+			@media (max-width: 1200px) {
+				left: 188px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 25px;
+			left: 200px;
+			width: 90px;
+			height: 2px;
+			background-color: #d1d1d1;
+
+			@media (max-width: 1200px) {
+				left: 155px;
+				width: 50px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+	}
+
+	.instruction2 {
+		background-image: url('../images/structure.png');
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 18px;
+			left: 270px;
+			width: 15px;
+			height: 15px;
+			border-top: 2px solid #d1d1d1;
+			border-right: 2px solid #d1d1d1;
+			transform: rotate(45deg);
+
+			@media (max-width: 1200px) {
+				left: 188px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 25px;
+			left: 200px;
+			width: 90px;
+			height: 2px;
+			background-color: #d1d1d1;
+
+			@media (max-width: 1200px) {
+				left: 155px;
+				width: 50px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+	}
+
+	.instruction3 {
+		background-image: url('../images/design_.png');
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 18px;
+			left: 270px;
+			width: 15px;
+			height: 15px;
+			border-top: 2px solid #d1d1d1;
+			border-right: 2px solid #d1d1d1;
+			transform: rotate(45deg);
+
+			@media (max-width: 1200px) {
+				left: 188px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 25px;
+			left: 200px;
+			width: 90px;
+			height: 2px;
+			background-color: #d1d1d1;
+
+			@media (max-width: 1200px) {
+				left: 155px;
+				width: 50px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+	}
+
+	.instruction4 {
+		background-image: url('../images/finger.png');
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 220px;
+			left: 72px;
+			width: 15px;
+			height: 15px;
+			border-top: 2px solid #d1d1d1;
+			border-right: 2px solid #d1d1d1;
+			transform: rotate(135deg);
+
+			@media (max-width: 1200px) {
+				top: 170px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 150px;
+			left: 80px;
+			width: 2px;
+			height: 90px;
+			background-color: #d1d1d1;
+
+			@media (max-width: 1200px) {
+				top: 140px;
+				height: 50px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+	}
+
+	.instruction5 {
+		background-image: url('../images/developers.png');
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 18px;
+			left: -130px;
+			width: 15px;
+			height: 15px;
+			border-top: 2px solid #d1d1d1;
+			border-right: 2px solid #d1d1d1;
+			transform: rotate(-135deg);
+
+			@media (max-width: 1200px) {
+				left: -58px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 25px;
+			left: -130px;
+			width: 90px;
+			height: 2px;
+			background-color: #d1d1d1;
+
+			@media (max-width: 1200px) {
+				width: 50px;
+				left: -58px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+	}
+
+	.instruction6 {
+		background-image: url('../images/test.png');
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 18px;
+			left: -130px;
+			width: 15px;
+			height: 15px;
+			border-top: 2px solid #d1d1d1;
+			border-right: 2px solid #d1d1d1;
+			transform: rotate(-135deg);
+
+			@media (max-width: 1200px) {
+				left: -58px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 25px;
+			left: -130px;
+			width: 90px;
+			height: 2px;
+			background-color: #d1d1d1;
+
+			@media (max-width: 1200px) {
+				width: 50px;
+				left: -58px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+	}
+
+	.instruction7 {
+		background-image: url('../images/ad_.png');
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 18px;
+			left: -130px;
+			width: 15px;
+			height: 15px;
+			border-top: 2px solid #d1d1d1;
+			border-right: 2px solid #d1d1d1;
+			transform: rotate(-135deg);
+
+			@media (max-width: 1200px) {
+				left: -58px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 25px;
+			left: -130px;
+			width: 90px;
+			height: 2px;
+			background-color: #d1d1d1;
+
+			@media (max-width: 1200px) {
+				width: 50px;
+				left: -58px;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+		}
+	}
+
+	.instruction8 {
+		background-image: url('../images/start.png');
+	}
+}

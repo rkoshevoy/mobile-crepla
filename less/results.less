@@ -1,0 +1,67 @@
+.results {
+	padding-top: 115px;
+	padding-bottom: 95px;
+	text-align: center;
+
+	@media (max-width: 1200px) {
+		padding-top: 90px;	
+	}
+
+	h2 {
+		position: relative;
+		margin-bottom: 110px;
+		text-transform: uppercase;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: -10px;
+			transform: translatex(-50%);
+			width: 200px;
+			height: 3px;
+			background-color: #f15151;
+		}
+	}
+
+	.result {
+		display: inline-block;
+		width: 230px;
+		padding-top: 100px;
+		text-align: center;
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		vertical-align: top;
+
+		@media (max-width: 1200px) {
+			width: 190px;
+			padding-top: 70px;
+			background-size: 50px;
+		}
+
+		@media (max-width: 800px) {
+			width: 49.5%;
+			margin-bottom: 20px;
+		}
+
+		@media (max-width: 520px) {
+			width: 100%;
+		}
+	}
+
+	.result1 {
+		background-image: url('../images/clients.png');
+	}
+
+	.result2 {
+		background-image: url('../images/graph.png');
+	}
+
+	.result3 {
+		background-image: url('../images/base.png');
+	}
+
+	.result4 {
+		background-image: url('../images/good.png');
+	}
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crepla</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/png">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+ 
+	<div class="modal modal_hide" id="modal_order">
+
+		<div class="bg_modal_trans"></div>
+		<div class="bg_modal_top">
+			<div class="bg_modal_bottom"></div>
+			<div class="modal_content">
+				<h1 class="modal_main_h">Оставьте заявку</h1>
+				<p>Для получения консультации и обсуждения проекта</p>
+				<div class="close"></div>
+				<form action="">
+					<div>
+						<label for="">Ваше имя:
+							<input type="text" placeholder="Ваше имя:" required pattern="^[A-Za-zА-Яа-яЁё\s]{1,50}" title="допускаются буквы русского и латинского алфавита">
+						</label>
+						<label for="">Ваш email:
+							<input type="email" placeholder="Ваш email:" required>
+						</label>
+						<label for="">Ваш телефон:
+							<input type="text" placeholder="Ваш телефон:" id="tel_modal">
+						</label>
+						<span class="tel_comment">* заполните это поле, если вы пользуетесь WhatsApp, Viber или Telegram</span>
+					</div>
+					<div>
+						<label for="">Ваше сообщение:
+							<textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение:"></textarea>
+						</label>
+						<h3 class="chkbox_h">Выберите тему обращение (необязательно)</h3>
+						<input id="chkbox_design" type="checkbox">
+						<label for="chkbox_design" class="chkbox_label">Дизайн сайтов</label>
+						<input type="checkbox" id="chkbox_develop">
+						<label for="chkbox_develop" class="chkbox_label">Разработка сайтов</label>
+						<input type="checkbox" id="chkbox_mob_apps">
+						<label for="chkbox_mob_apps" class="chkbox_label">Мобильные приложения</label>
+					</div>
+					<button type="submit">Начать крутой проект!</button>
+					<input type="hidden" id="takes_used_button" value="">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="bg_top">
+		<header class="header">
+			<div class="wrapper">
+				<div class="menu_button">
+					<div class="menu_line"></div>
+					<div class="menu_line"></div>
+					<div class="menu_line"></div>
+				</div>
+
+				<a href="#"><div class="logo"></div></a>
+
+				<nav class="main_nav menu_hide">
+					<ul>
+						<li class="animated bounceInRight"><a href="#works">Наши работы</a></li>
+						<li class="animated bounceInRight"><a href="#services">Услуги</a></li>
+						<li class="animated bounceInRight"><a href="#contacts">Контакты</a></li>
+
+						<div class="mobile_list">
+							<li class="animated bounceInRight">
+							<p>WhatsApp, Viber, Telegram</p>
+								<a href="tel:+380957112432" class="phone">+38 (095) 711-24-32</a>
+							</li>
+							<li class="animated bounceInRight">
+							<p>skype</p>
+							<a href="#">creativeplanet.ua</a></li>
+						</div>
+					</ul>
+				</nav>
+
+				<ul class="header_right">
+					<li class="header_phone animated bounceInRight">
+						<p>WhatsApp, Viber, Telegram</p>
+						<a href="tel:+380957112432" class="phone">+38 (095) 711-24-32</a>
+
+						<div class="header_skype">
+							<span>Skype</span>
+							<a href="skype:creativeplanet.ua">creativeplanet.ua</a><br>
+						</div>
+					</li>
+					<li><button class="button button_modal animated bounceInRight">Оставить заявку</button></li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="advantages">
+			<div class="wrapper">	
+				<h1 class="animated fadeInUp">Увеличим продажи вашего бизнеса через месяц на 40% с помощью Landing page по технологии 4U</h1>
+
+				<div class="advantage_row animated fadeInUp">	
+					<div class="advantage content">
+						<span>Продающий контент</span>
+					</div>
+					<div class="advantage design">
+						<span>Уникальный дизайн</span>
+					</div>
+					<div class="advantage mobile">
+						<span>Мобильная версия</span>
+					</div>
+					<div class="advantage ads">
+						<span>Настройка рекламы</span>
+					</div>
+				</div>
+
+				<button class="button button_modal animated fadeInUp">Расчитать стоимость</button>
+				<div class="see_works animated fadeInUp">
+					<a href="#">Посмотреть работы</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="clients">
+		<div class="content hidden">
+			<h2>До 20 контактов ежедневно в вашу клиентскую базу с помощью Landing page по технологии 4U</h2>
+
+			<button class="button button_full button_modal">Хочу получить больше клиентов</button>
+		</div>
+	</div>
+
+	<div class="results">
+		<div class="wrapper">
+			<div class="content hidden">
+				<h2>Результаты нашей работы</h2>
+
+				<div class="result result1">Появляются<br>новые клиенты</div>
+				<div class="result result2">Продажи вашего<br>бизнеса увеличиваются</div>
+				<div class="result result3">Увеличивается<br>клиентская база</div>
+				<div class="result result4">Всё больше людей узнают<br>о новом товаре или услуге</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer" id="contacts">
+		<div class="wrapper">
+			<div class="content hidden">
+				<h2>Оставьте заявку на Landing page сейчас<br>и получите приятное предложение от нашего менеджера</h2>
+				<button class="button button_full button_modal">Заказать консультацию специалиста</button>
+				<p>Или свяжитесь с нами</p>
+
+				<div class="social phone">
+					<a href="+380957112432">+380957112432</a> <br>
+					<span>WhatsApp, Viber</span>
+				</div>
+				<div class="social email">
+					<a href="mailto:support@crepla.ua">support@crepla.ua</a><br>
+					<span>email</span>
+				</div>
+				<div class="social skype">
+					<a href="skype:creativeplanet.ua">creativeplanet.ua</a><br>
+					<span>Skype</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+	<script type="text/javascript" src="js/mobile_menu.js"></script>
+
+	<script type="text/javascript" src="js/modal.js"></script>
+
+	<script type="text/javascript" src="js/jquery.viewportchecker.min.js"></script>
+
+	<script type="text/javascript" src="js/animation-delay.js"></script>
+
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script type="text/javascript">
+		var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			direction: 'vertical'
+		});
+	</script>
+
+	<script type="text/javascript" src="js/waypoints-animated.js"></script>
+
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
+
+</body>
+</html>
