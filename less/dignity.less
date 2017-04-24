@@ -1,5 +1,4 @@
 .dignity {
-	position: relative;
 
 	.wrapper {
 		position: relative;
@@ -19,8 +18,17 @@
 			padding-right: 250px;
 		}
 
+		@media (max-width: 800px) {
+			padding-top: 600px;
+			padding-right: 0;
+		}
+
 		h3 {
 			text-align: right;
+
+			@media (max-width: 800px) {
+				text-align: left;
+			}
 		}
 	}
 
@@ -40,11 +48,20 @@
 			text-align: right;
 		}
 
+		@media (max-width: 800px) {
+			padding-top: 600px;
+			padding-right: 0;
+		}
+
 		h3 {
 			text-align: left;
 
 			@media (max-width: 1200px) {
 				text-align: right;
+			}
+
+			@media (max-width: 800px) {
+				text-align: left;
 			}
 		}
 	}
@@ -61,6 +78,11 @@
 			height: 630px;
 			transform: translatex(-60%);
 		}
+
+		@media (max-width: 800px) {
+			left: 50%;
+			transform: translatex(-50%);
+		}
 	}
 
 	.dignity_item {
@@ -76,6 +98,10 @@
 			font-size: 14px;
 			line-height: 23px;
 			color: #666666;
+
+			@media (max-width: 800px) {
+				text-align: left;
+			}
 		}
 	}
 
@@ -83,18 +109,38 @@
 		padding-right: 70px;
 		background-image: url('../images/cost.png');
 		background-position: right top;
+
+		@media (max-width: 800px) {
+			padding-right: 0;
+			padding-left: 70px;
+			background-position: left top;
+		}
 	}
 
 	.dignity_second {
 		padding-right: 70px;
 		background-image: url('../images/manager.png');
 		background-position: right top;
+
+		@media (max-width: 800px) {
+			padding-right: 0;
+			padding-left: 70px;
+			background-position: left top;
+		}
+
 	}
 
 	.dignity_third {
 		padding-right: 70px;
 		background-image: url('../images/publish.png');
 		background-position: right top;
+
+		@media (max-width: 800px) {
+			padding-right: 0;
+			padding-left: 70px;
+			background-position: left top;
+		}
+
 	}
 
 	.dignity_fourth {
@@ -107,6 +153,13 @@
 			padding-right: 70px;
 			background-position: right top;
 		}
+
+		@media (max-width: 800px) {
+			padding-right: 0;
+			padding-left: 70px;
+			background-position: left top;
+		}
+
 	}
 
 	.dignity_fifth {
@@ -119,6 +172,13 @@
 			padding-right: 70px;
 			background-position: right top;
 		}
+
+		@media (max-width: 800px) {
+			padding-right: 0;
+			padding-left: 70px;
+			background-position: left top;
+		}
+
 	}
 
 	.dignity_sixth {
@@ -131,6 +191,13 @@
 			padding-right: 70px;
 			background-position: right top;
 		}
+
+		@media (max-width: 800px) {
+			padding-right: 0;
+			padding-left: 70px;
+			background-position: left top;
+		}
+
 	}
 
 	.slider_dots {

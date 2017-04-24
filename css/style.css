@@ -420,9 +420,6 @@ h3 {
   color: #fff;
   text-decoration: none;
 }
-.dignity {
-  position: relative;
-}
 .dignity .wrapper {
   position: relative;
 }
@@ -924,6 +921,57 @@ h3 {
     width: 49.5%;
     margin-right: 0;
     margin-bottom: 20px;
+  }
+  .dignity .dignity_left {
+    padding-top: 600px;
+    padding-right: 0;
+  }
+  .dignity .dignity_left h3 {
+    text-align: left;
+  }
+  .dignity .dignity_right {
+    padding-top: 600px;
+    padding-right: 0;
+  }
+  .dignity .dignity_right h3 {
+    text-align: left;
+  }
+  .dignity img {
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .dignity .dignity_item p {
+    text-align: left;
+  }
+  .dignity .dignity_first {
+    padding-right: 0;
+    padding-left: 70px;
+    background-position: left top;
+  }
+  .dignity .dignity_second {
+    padding-right: 0;
+    padding-left: 70px;
+    background-position: left top;
+  }
+  .dignity .dignity_third {
+    padding-right: 0;
+    padding-left: 70px;
+    background-position: left top;
+  }
+  .dignity .dignity_fourth {
+    padding-right: 0;
+    padding-left: 70px;
+    background-position: left top;
+  }
+  .dignity .dignity_fifth {
+    padding-right: 0;
+    padding-left: 70px;
+    background-position: left top;
+  }
+  .dignity .dignity_sixth {
+    padding-right: 0;
+    padding-left: 70px;
+    background-position: left top;
   }
   .results .result {
     width: 49.5%;
