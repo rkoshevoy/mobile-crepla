@@ -422,11 +422,14 @@ h3 {
 }
 .dignity {
   position: relative;
-  padding-top: 75px;
+}
+.dignity .wrapper {
+  position: relative;
 }
 .dignity .dignity_left {
   display: inline-block;
   width: 50%;
+  padding-top: 75px;
   margin-right: -4px;
   padding-right: 215px;
   vertical-align: top;
@@ -438,6 +441,7 @@ h3 {
 .dignity .dignity_right {
   display: inline-block;
   width: 50%;
+  padding-top: 75px;
   margin-right: -4px;
   padding-left: 215px;
   vertical-align: top;
@@ -467,32 +471,35 @@ h3 {
 .dignity .dignity_first {
   padding-right: 70px;
   background-image: url('../images/cost.png');
-  background-position: right;
+  background-position: right top;
 }
 .dignity .dignity_second {
   padding-right: 70px;
   background-image: url('../images/manager.png');
-  background-position: right;
+  background-position: right top;
 }
 .dignity .dignity_third {
   padding-right: 70px;
   background-image: url('../images/publish.png');
-  background-position: right;
+  background-position: right top;
 }
 .dignity .dignity_fourth {
   padding-left: 70px;
   background-image: url('../images/experience.png');
-  background-position: left;
+  background-position: left top;
 }
 .dignity .dignity_fifth {
   padding-left: 70px;
   background-image: url('../images/warranty.png');
-  background-position: left;
+  background-position: left top;
 }
 .dignity .dignity_sixth {
   padding-left: 70px;
   background-image: url('../images/analitics.png');
-  background-position: left;
+  background-position: left top;
+}
+.dignity .slider_dots {
+  display: none;
 }
 .clients {
   padding-top: 140px;
@@ -745,6 +752,62 @@ h3 {
   }
   .advantages h1 {
     font-size: 28px;
+  }
+  .dignity .dignity_left {
+    width: 100%;
+    padding-right: 250px;
+  }
+  .dignity .dignity_right {
+    display: none;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 250px;
+    text-align: right;
+  }
+  .dignity .dignity_right h3 {
+    text-align: right;
+  }
+  .dignity img {
+    left: 100%;
+    top: -110px;
+    height: 630px;
+    transform: translatex(-60%);
+  }
+  .dignity .dignity_fourth {
+    padding-left: 0;
+    padding-right: 70px;
+    background-position: right top;
+  }
+  .dignity .dignity_fifth {
+    padding-left: 0;
+    padding-right: 70px;
+    background-position: right top;
+  }
+  .dignity .dignity_sixth {
+    padding-left: 0;
+    padding-right: 70px;
+    background-position: right top;
+  }
+  .dignity .slider_dots {
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+  }
+  .dignity .slider_dots ul li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #cccccc;
+    list-style: none;
+  }
+  .dignity .slider_dots ul li:first-of-type {
+    margin-right: 3px;
+  }
+  .dignity .slider_dots ul .active_dot {
+    background-color: #ff4f53;
   }
   .results {
     padding-top: 90px;
