@@ -1,68 +1,29 @@
 .dignity {
-
-	.wrapper {
-		position: relative;
-	}
+	position: relative;
+	padding-top: 75px;
 	
 	.dignity_left {
 		display: inline-block;
 		width: 50%;
-		padding-top: 75px;
 		margin-right: -4px;
 		padding-right: 215px;
 		vertical-align: top;
 		text-align: right;
 
-		@media (max-width: 1200px) {
-			width: 100%;
-			padding-right: 250px;
-		}
-
-		@media (max-width: 800px) {
-			padding-top: 600px;
-			padding-right: 0;
-		}
-
 		h3 {
 			text-align: right;
-
-			@media (max-width: 800px) {
-				text-align: left;
-			}
 		}
 	}
 
 	.dignity_right {
 		display: inline-block;
 		width: 50%;
-		padding-top: 75px;
 		margin-right: -4px;
 		padding-left: 215px;
 		vertical-align: top;
 
-		@media (max-width: 1200px) {
-			display: none;
-			width: 100%;
-			padding-left: 0;
-			padding-right: 250px;
-			text-align: right;
-		}
-
-		@media (max-width: 800px) {
-			padding-top: 600px;
-			padding-right: 0;
-		}
-
 		h3 {
 			text-align: left;
-
-			@media (max-width: 1200px) {
-				text-align: right;
-			}
-
-			@media (max-width: 800px) {
-				text-align: left;
-			}
 		}
 	}
 
@@ -71,18 +32,6 @@
 		top: -134px;
 		left: 50%;
 		transform: translatex(-50%);
-
-		@media (max-width: 1200px) {
-			left: 100%;
-			top: -110px;
-			height: 630px;
-			transform: translatex(-60%);
-		}
-
-		@media (max-width: 800px) {
-			left: 50%;
-			transform: translatex(-50%);
-		}
 	}
 
 	.dignity_item {
@@ -98,137 +47,42 @@
 			font-size: 14px;
 			line-height: 23px;
 			color: #666666;
-
-			@media (max-width: 800px) {
-				text-align: left;
-			}
 		}
 	}
 
 	.dignity_first {
 		padding-right: 70px;
 		background-image: url('../images/cost.png');
-		background-position: right top;
-
-		@media (max-width: 800px) {
-			padding-right: 0;
-			padding-left: 70px;
-			background-position: left top;
-		}
+		background-position: right;
 	}
 
 	.dignity_second {
 		padding-right: 70px;
 		background-image: url('../images/manager.png');
-		background-position: right top;
-
-		@media (max-width: 800px) {
-			padding-right: 0;
-			padding-left: 70px;
-			background-position: left top;
-		}
-
+		background-position: right;
 	}
 
 	.dignity_third {
 		padding-right: 70px;
 		background-image: url('../images/publish.png');
-		background-position: right top;
-
-		@media (max-width: 800px) {
-			padding-right: 0;
-			padding-left: 70px;
-			background-position: left top;
-		}
-
+		background-position: right;
 	}
 
 	.dignity_fourth {
 		padding-left: 70px;
 		background-image: url('../images/experience.png');
-		background-position: left top;
-
-		@media (max-width: 1200px) {
-			padding-left: 0;
-			padding-right: 70px;
-			background-position: right top;
-		}
-
-		@media (max-width: 800px) {
-			padding-right: 0;
-			padding-left: 70px;
-			background-position: left top;
-		}
-
+		background-position: left;
 	}
 
 	.dignity_fifth {
 		padding-left: 70px;
 		background-image: url('../images/warranty.png');
-		background-position: left top;
-
-		@media (max-width: 1200px) {
-			padding-left: 0;
-			padding-right: 70px;
-			background-position: right top;
-		}
-
-		@media (max-width: 800px) {
-			padding-right: 0;
-			padding-left: 70px;
-			background-position: left top;
-		}
-
+		background-position: left;
 	}
 
 	.dignity_sixth {
 		padding-left: 70px;
 		background-image: url('../images/analitics.png');
-		background-position: left top;
-
-		@media (max-width: 1200px) {
-			padding-left: 0;
-			padding-right: 70px;
-			background-position: right top;
-		}
-
-		@media (max-width: 800px) {
-			padding-right: 0;
-			padding-left: 70px;
-			background-position: left top;
-		}
-
-	}
-
-	.slider_dots {
-		display: none;
-
-		@media (max-width: 1200px) {
-			display: block;
-			width: 50px;
-			margin: 0 auto;
-			margin-bottom: 75px;
-
-			ul {
-
-				li {
-					display: inline-block;
-					width: 20px;
-					height: 20px;
-					cursor: pointer;
-					border-radius: 50%;
-					background-color: #cccccc;
-					list-style: none;
-
-					&:first-of-type {
-						margin-right: 3px;
-					}
-				}
-
-				.active_dot {
-					background-color: #ff4f53;
-				}
-			}
-		}
+		background-position: left;
 	}
 }
