@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Crepla</title>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/png">
+	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
@@ -107,44 +107,53 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<div class="dignity">
 		<div class="wrapper">
 			<div class="content hidden">
-				<div class="dignity_left">
-					<div class="dignity_item dignity_first">
-						<h3>Стоимость от 50 000 руб</h3>
-						<p>Оптимизированные процессы помогают держать низкую цену.</p>
-					</div>
-
-					<div class="dignity_item dignity_second">
-						<h3>Персональный менеджер</h3>
-						<p>Консультации без ограничений во времени.</p>
-					</div>
-
-					<div class="dignity_item dignity_third">
-						<h3>Публикация AppStore и Google Play</h3>
-						<p>Консультации без ограничений во времени.</p>
-					</div>
-				</div>
-
 				<img src="images/phone.png" alt="iPhone">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="dignity_left">
+								<div class="dignity_item dignity_first">
+									<h3>Стоимость от 50 000 руб</h3>
+									<p>Оптимизированные процессы помогают держать низкую цену.</p>
+								</div>
 
-				<div class="dignity_right">
-					<div class="dignity_item dignity_fourth">
-						<h3>Опыт и компетенции</h3>
-						<p>6 лет на рынке, 145 сертификатов специалистов.</p>
-					</div>
+								<div class="dignity_item dignity_second">
+									<h3>Персональный менеджер</h3>
+									<p>Консультации без ограничений во времени.</p>
+								</div>
 
-					<div class="dignity_item dignity_fifth">
-						<h3>Гарантия 6 месяцев</h3>
-						<p>Бесплатная поддержка на протяжении всей гарантии.</p>
-					</div>
+								<div class="dignity_item dignity_third">
+									<h3>Публикация AppStore и Google Play</h3>
+									<p>Консультации без ограничений во времени.</p>
+								</div>
+							</div>
+						</div>
 
-					<div class="dignity_item dignity_sixth">
-						<h3>Аналитика поведения в приложении</h3>
-						<p>В подарок!</p>
+						<div class="swiper-slide">
+							<div class="dignity_right">
+								<div class="dignity_item dignity_fourth">
+									<h3>Опыт и компетенции</h3>
+									<p>6 лет на рынке, 145 сертификатов специалистов.</p>
+								</div>
+
+								<div class="dignity_item dignity_fifth">
+									<h3>Гарантия 6 месяцев</h3>
+									<p>Бесплатная поддержка на протяжении всей гарантии.</p>
+								</div>
+
+								<div class="dignity_item dignity_sixth">
+									<h3>Аналитика поведения в приложении</h3>
+									<p>В подарок!</p>
+								</div>
+							</div></div>
+						</div>
+
 					</div>
+					<div class="swiper-pagination"></div>
 				</div>
 			</div>
 		</div>
@@ -204,20 +213,26 @@
 
 	<script type="text/javascript" src="js/animation-delay.js"></script>
 
-	<script type="text/javascript" src="js/swiper.min.js"></script>
-
-	<!-- Initialize Swiper -->
-	<script type="text/javascript">
-		var swiper = new Swiper('.swiper-container', {
-			pagination: '.swiper-pagination',
-			paginationClickable: true,
-			direction: 'vertical'
-		});
-	</script>
-
 	<script type="text/javascript" src="js/waypoints-animated.js"></script>
 
 	<script type="text/javascript" src="js/smoothscroll.js"></script>
+
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+
+	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			if (screen.width < 1200) {
+				var mySwiper = new Swiper ('.swiper-container', {
+					loop: true,
+					autoplay: 3000,
+					pagination: '.swiper-pagination',
+					paginationClickable: true
+				})   
+			}     
+		});
+	</script>
 
 </body>
 </html>
