@@ -63,7 +63,6 @@ h3 {
 .bg_top {
   background-image: url('../images/bg_top.jpg');
   background-position: 50% 0;
-  background-size: 100% auto;
 }
 .hidden {
   opacity: 0;
@@ -742,9 +741,6 @@ h3 {
   .wrapper {
     width: 800px;
   }
-  .modal .bg_modal_trans {
-    background-size: 1300px;
-  }
   .modal .modal_content {
     width: 700px;
   }
@@ -998,11 +994,6 @@ h3 {
     width: 100%;
     margin-right: 0;
     margin-bottom: 30px;
-  }
-}
-@media (max-width: 1530px) {
-  .bg_top {
-    background-size: auto 100%;
   }
 }
 @media (max-width: 1630px) {
