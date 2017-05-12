@@ -521,13 +521,24 @@ h3 {
   color: #fff;
   text-align: center;
   background-size: 100% auto;
+  /* h2 {
+		width: 90%;
+		max-width: 670px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		line-height: 39px;
+		} */
 }
-.clients h2 {
-  width: 90%;
-  max-width: 670px;
-  margin: 0 auto;
+.clients ul {
   margin-bottom: 50px;
-  line-height: 39px;
+}
+.clients ul li {
+  display: inline-block;
+  width: 20%;
+  text-align: left;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0 auto;
 }
 .clients .button {
   color: #fff;
@@ -801,6 +812,12 @@ h3 {
   .swiper-wrapper {
     padding-bottom: 70px;
   }
+  .clients {
+    padding-top: 80px;
+  }
+  .clients ul li {
+    width: 30%;
+  }
   .results {
     padding-top: 90px;
   }
@@ -976,6 +993,10 @@ h3 {
     padding-left: 70px;
     background-position: left top;
   }
+  .clients ul li {
+    padding-left: 50px;
+    width: 49%;
+  }
   .results .result {
     width: 49.5%;
     margin-bottom: 20px;
@@ -1005,6 +1026,13 @@ h3 {
 @media (max-width: 1630px) {
   .clients {
     background-size: auto 100%;
+  }
+}
+@media (max-width: 600px) {
+  .clients ul li {
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
   }
 }
 @media (max-width: 520px) {

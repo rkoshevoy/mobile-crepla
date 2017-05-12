@@ -11,16 +11,48 @@
 		background-size: auto 100%;
 	}
 
-	h2 {
+	@media (max-width: 1200px) {
+		padding-top: 80px;
+	}
+
+	/* h2 {
 		width: 90%;
 		max-width: 670px;
 		margin: 0 auto;
 		margin-bottom: 50px;
 		line-height: 39px;
-	}
+		} */
 
-	.button {
-		color: #fff;
-		margin: 0 auto;
+		ul {
+				margin-bottom: 50px;
+
+			li {
+				display: inline-block;
+				width: 20%;
+				text-align: left;
+				font-size: 20px;
+				line-height: 25px;
+				margin: 0 auto;
+
+				@media (max-width: 1200px) {
+					width: 30%;
+				}
+
+				@media (max-width: 800px) {
+					padding-left: 50px;
+					width: 49%;
+				}
+
+				@media (max-width: 600px) {
+					padding-left: 0;
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+
+		.button {
+			color: #fff;
+			margin: 0 auto;
+		}
 	}
-}
