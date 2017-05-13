@@ -495,7 +495,24 @@ h3 {
   background-image: url('../images/analitics.png');
   background-position: left top;
 }
-.swiper-slide {
+.phone-slider {
+  position: absolute;
+  z-index: 10;
+  top: -44px;
+  left: calc(50% - 165px);
+  width: 330px;
+  height: 585px;
+}
+.phone-slider .phone-slide {
+  width: 330px;
+  height: 585px;
+}
+.phone-slider .phone-slide img {
+  top: 0;
+  width: 100%;
+  height: 585px;
+}
+.dignity-slide {
   width: 50%;
 }
 .swiper-pagination {
@@ -806,10 +823,10 @@ h3 {
     padding-right: 70px;
     background-position: right top;
   }
-  .swiper-slide {
+  .dignity-slide {
     width: 100%;
   }
-  .swiper-wrapper {
+  .dignity-wrapper {
     padding-bottom: 70px;
   }
   .clients {

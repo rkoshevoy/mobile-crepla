@@ -108,9 +108,24 @@
 		<div class="wrapper">
 			<div class="content hidden">
 				<img src="images/phone.png" alt="iPhone">
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
+				
+				<div class="phone-slider">
+					<div class="swiper-container swiper1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide phone-slide">
+								<img src="images/eden.jpg" alt="">
+							</div>
+
+							<div class="swiper-slide phone-slide">
+								<img src="images/advance_agent.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-container swiper2">
+					<div class="dignity-wrapper swiper-wrapper">
+						<div class="dignity-slide swiper-slide">
 							<div class="dignity_left">
 								<div class="dignity_item dignity_first">
 									<h3>Стоимость от 1000$</h3>
@@ -129,7 +144,7 @@
 							</div>
 						</div>
 
-						<div class="swiper-slide">
+						<div class="dignity-slide swiper-slide">
 							<div class="dignity_right">
 								<div class="dignity_item dignity_fourth">
 									<h3>Качество выполнения</h3>
@@ -145,12 +160,12 @@
 									<h3>Аналитика поведения в приложении</h3>
 									<p>В подарок!</p>
 								</div>
-							</div></div>
+							</div>
 						</div>
-
 					</div>
-					<div class="swiper-pagination"></div>
+
 				</div>
+				<div class="swiper-pagination"></div>
 			</div>
 		</div>
 	</div>
@@ -234,14 +249,19 @@
 
 	<script type="text/javascript">
 		$(document).ready(function () {
+			var mySwiper1 = new Swiper ('.swiper1', {
+				loop: true,
+				autoplay: 3000
+			}) 
+
 			if (screen.width < 1200) {
-				var mySwiper = new Swiper ('.swiper-container', {
+				var mySwiper2 = new Swiper ('.swiper2', {
 					loop: true,
 					autoplay: 3000,
 					pagination: '.swiper-pagination',
 					paginationClickable: true
 				})   
-			}     
+			}    
 		});
 	</script>
 
