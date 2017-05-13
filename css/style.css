@@ -509,7 +509,7 @@ h3 {
 }
 .phone-slider .phone-slide img {
   top: 0;
-  width: 100%;
+  width: 330px;
   height: 585px;
 }
 .dignity-slide {
@@ -823,6 +823,22 @@ h3 {
     padding-right: 70px;
     background-position: right top;
   }
+  .phone-slider {
+    top: -35px;
+    left: auto;
+    right: -107px;
+    width: 274px;
+    height: 483px;
+  }
+  .phone-slider .phone-slide {
+    left: -110px;
+    width: 274px;
+    height: 483px;
+  }
+  .phone-slider .phone-slide img {
+    width: 274px;
+    height: 483px;
+  }
   .dignity-slide {
     width: 100%;
   }
@@ -1009,6 +1025,13 @@ h3 {
     padding-right: 0;
     padding-left: 70px;
     background-position: left top;
+  }
+  .phone-slider {
+    right: auto;
+    left: calc(50% - 137px);
+  }
+  .phone-slider .phone-slide {
+    left: 0;
   }
   .clients ul li {
     padding-left: 50px;

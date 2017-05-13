@@ -209,17 +209,45 @@
 	z-index: 10;
 	top: -44px;
 	left: ~"calc(50% - 165px)";
-	width: 330px;
-	height: 585px;
+	width: 330px; 
+	height: 585px; 
+
+	@media (max-width: 1200px) {
+		top: -35px;
+		left: auto;
+		right: -107px;
+		width: 274px;
+		height: 483px;
+	}
+
+	@media (max-width: 800px) {
+		right: auto;
+		left: ~"calc(50% - 137px)";
+	}
 
 	.phone-slide {
 		width: 330px;
 		height: 585px;
 
+		@media (max-width: 1200px) {
+			left: -110px;
+			width: 274px;
+			height: 483px;
+		}
+
+		@media (max-width: 800px) {
+			left: 0;
+		}
+
 		img {
 			top: 0;
-			width: 100%;
+			width: 330px;
 			height: 585px;
+
+			@media (max-width: 1200px) {
+				width: 274px;
+				height: 483px;
+			}
 		}
 	}
 }
