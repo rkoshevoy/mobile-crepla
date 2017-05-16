@@ -15,44 +15,67 @@
 		padding-top: 80px;
 	}
 
-	/* h2 {
+	h2 {
 		width: 90%;
 		max-width: 670px;
 		margin: 0 auto;
-		margin-bottom: 50px;
+		padding-bottom: 50px;
 		line-height: 39px;
-		} */
+	} 
 
-		ul {
-				margin-bottom: 50px;
+	ul {
+		margin-bottom: 50px;
 
-			li {
+		li {
+			display: inline-block;
+			width: 24%;
+			margin-right: -4px;
+			font-size: 20px;
+			line-height: 25px;
+			margin: 0 auto;
+			
+			@media (max-width: 1200px) {
+				width: 30%;
+			}
+			
+			@media (max-width: 950px) {
+				width: 49%;
+			}
+			
+			@media (max-width: 600px) {
+				padding-left: 0;
+				width: 100%;
+				text-align: center;
+			}
+		}
+
+			/* li {
 				display: inline-block;
 				width: 20%;
 				text-align: left;
 				font-size: 20px;
 				line-height: 25px;
 				margin: 0 auto;
-
+			
 				@media (max-width: 1200px) {
 					width: 30%;
 				}
-
+			
 				@media (max-width: 800px) {
 					padding-left: 50px;
 					width: 49%;
 				}
-
+			
 				@media (max-width: 600px) {
 					padding-left: 0;
 					width: 100%;
 					text-align: center;
 				}
+				} */
+			}
+
+			.button {
+				color: #fff;
+				margin: 0 auto;
 			}
 		}
-
-		.button {
-			color: #fff;
-			margin: 0 auto;
-		}
-	}
