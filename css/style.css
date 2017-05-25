@@ -54,7 +54,8 @@ h3 {
   background-color: #f15151;
 }
 .button_full:hover {
-  border: 4px solid black;
+  background-color: #00A6E4;
+  border: 4px solid #00A6E4;
 }
 .wrapper {
   width: 1160px;
@@ -546,41 +547,20 @@ h3 {
   padding-bottom: 50px;
   line-height: 39px;
 }
-.clients ul {
-  margin-bottom: 50px;
-  /* li {
-				display: inline-block;
-				width: 20%;
-				text-align: left;
-				font-size: 20px;
-				line-height: 25px;
-				margin: 0 auto;
-			
-				@media (max-width: 1200px) {
-					width: 30%;
-				}
-			
-				@media (max-width: 800px) {
-					padding-left: 50px;
-					width: 49%;
-				}
-			
-				@media (max-width: 600px) {
-					padding-left: 0;
-					width: 100%;
-					text-align: center;
-				}
-				} */
+.clients .forwhat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
-.clients ul li {
-  display: inline-block;
-  width: 24%;
-  margin-right: -4px;
+.clients .forwhat ul li {
+  text-align: left;
   font-size: 20px;
   line-height: 25px;
   margin: 0 auto;
 }
 .clients .button {
+  display: block;
   color: #fff;
   margin: 0 auto;
 }
@@ -698,17 +678,6 @@ h3 {
 .footer .skype {
   background-image: url('../images/skype.png');
 }
-@media (min-width: 800px) and (max-width: 1200px) {
-  .header .header_right li {
-    margin-top: 10px;
-  }
-  .header .header_right li .phone {
-    padding-left: 45px;
-  }
-  .header .header_right li .phone::before {
-    display: none;
-  }
-}
 @media (min-width: 800px) {
   .header .header_right {
     display: block;
@@ -782,6 +751,17 @@ h3 {
   }
   .header .header_right .button {
     animation-delay: 1s;
+  }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  .header .header_right li {
+    margin-top: 10px;
+  }
+  .header .header_right li .phone {
+    padding-left: 45px;
+  }
+  .header .header_right li .phone::before {
+    display: none;
   }
 }
 @media (min-width: 800px) and (min-width: 1200px) {
@@ -871,8 +851,12 @@ h3 {
   .clients {
     padding-top: 80px;
   }
-  .clients ul li {
-    width: 30%;
+  .clients .forwhat {
+    justify-content: space-around;
+    margin-left: 10%;
+  }
+  .clients .forwhat ul {
+    width: 40%;
   }
   .results {
     padding-top: 90px;
@@ -884,11 +868,6 @@ h3 {
   }
   .footer h2 {
     font-size: 26px;
-  }
-}
-@media (max-width: 1570px) {
-  .bg_top {
-    background-size: auto 100%;
   }
 }
 @media (max-width: 800px) {
@@ -1061,6 +1040,16 @@ h3 {
   .phone-slider .phone-slide {
     left: 0;
   }
+  .clients .forwhat {
+    margin-left: 0px;
+  }
+  .clients .forwhat ul {
+    width: 100%;
+  }
+  .clients .forwhat ul li {
+    text-align: center;
+    list-style: none;
+  }
   .results .result {
     width: 49.5%;
     margin-bottom: 20px;
@@ -1082,21 +1071,14 @@ h3 {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 1630px) {
-  .clients {
+@media (max-width: 1570px) {
+  .bg_top {
     background-size: auto 100%;
   }
 }
-@media (max-width: 950px) {
-  .clients ul li {
-    width: 49%;
-  }
-}
-@media (max-width: 600px) {
-  .clients ul li {
-    padding-left: 0;
-    width: 100%;
-    text-align: center;
+@media (max-width: 1630px) {
+  .clients {
+    background-size: auto 100%;
   }
 }
 @media (max-width: 520px) {

@@ -21,33 +21,34 @@
 				<h1 class="modal_main_h">Оставьте заявку</h1>
 				<p>Для получения консультации и обсуждения проекта</p>
 				<div class="close"></div>
-				<form action="">
+				<form id="send_request">               
 					<div>
-						<label for="">Ваше имя:
-							<input type="text" placeholder="Ваше имя:" required pattern="^[A-Za-zА-Яа-яЁё\s]{1,50}" title="допускаются буквы русского и латинского алфавита">
+						<label>Ваше имя:
+							<input type="text" name="name" placeholder="Ваше имя:" required pattern="^[A-Za-zА-Яа-яЁё\s-]{1,50}" title="допускаются буквы русского и латинского алфавита">
 						</label>
-						<label for="">Ваш email:
-							<input type="email" placeholder="Ваш email:" required>
+						<label>Ваш email:
+							<input type="email" name="email" placeholder="Ваш email:" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
 						</label>
-						<label for="">Ваш телефон:
-							<input type="text" placeholder="Ваш телефон:" id="tel_modal">
+						<label>Ваш телефон:
+							<input type="text" name="tel_modal" placeholder="Ваш телефон:" value="+" minlength="11" maxlength="20" pattern="\+\d*" 
+							title="Введите телефон в международном формате, начиная с символа +">
 						</label>
 						<span class="tel_comment">* заполните это поле, если вы пользуетесь WhatsApp, Viber или Telegram</span>
 					</div>
 					<div>
-						<label for="">Ваше сообщение:
-							<textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение:"></textarea>
+						<label>Ваше сообщение:
+							<textarea name="message" cols="30" rows="10" placeholder="Ваше сообщение:"></textarea>
 						</label>
 						<h3 class="chkbox_h">Выберите тему обращение (необязательно)</h3>
-						<input id="chkbox_design" type="checkbox">
+						<input id="chkbox_design" type="checkbox" name="chkbox_design" value="Дизайн сайтов">
 						<label for="chkbox_design" class="chkbox_label">Дизайн сайтов</label>
-						<input type="checkbox" id="chkbox_develop">
+						<input type="checkbox" id="chkbox_develop" name="chkbox_develop" value="Разработка сайтов">
 						<label for="chkbox_develop" class="chkbox_label">Разработка сайтов</label>
-						<input type="checkbox" id="chkbox_mob_apps">
+						<input type="checkbox" id="chkbox_mob_apps" name="chkbox_mob_apps" value="Мобильные приложения">
 						<label for="chkbox_mob_apps" class="chkbox_label">Мобильные приложения</label>
 					</div>
-					<button type="submit">Начать крутой проект!</button>
-					<input type="hidden" id="takes_used_button" value="">
+					<button class="submit" name="submit" type="submit">Начать крутой проект!</button>
+					<input type="hidden" name="takes_used_button" id="takes_used_button">                    
 				</form>
 			</div>
 		</div>
@@ -171,26 +172,35 @@
 	</div>
 
 	<div class="clients">
-		<div class="content hidden">
-			<!-- <h2>До 20 контактов ежедневно в вашу клиентскую базу с помощью Landing page по технологии 4U</h2> -->
-			<h2>Для чего подойдёт приложение?</h2>
+		<div class="wrapper">
+			<div class="content hidden">
+				<h2>Для чего подойдёт приложение?</h2>
 
-			<ul>
-				<li>- Развлечения и игры</li>
-				<li>- Городская среда</li>
-				<li>- Недвижимость</li>
-				<li>- Промышленность</li>
-				<li>- Ритейл</li>
-				<li>- E-commerce</li>
-				<li>- Медицина</li>
-				<li>- Архитектура</li>
-				<li>- Реклама и маркетинг</li>
-				<li>- Банки и финансы</li>
-				<li>- Туризм</li>
-				<li>- Обучение</li>
-			</ul>
+				<div class="forwhat">
+					<ul>
+						<li>Развлечения и игры</li>
+						<li>Городская среда</li>
+						<li>Недвижимость</li>
+					</ul>
+					<ul>
+						<li>Промышленность</li>
+						<li>Ритейл</li>
+						<li>E-commerce</li>
+					</ul>
+					<ul>
+						<li>Медицина</li>
+						<li>Архитектура</li>
+						<li>Реклама и маркетинг</li>
+					</ul>
+					<ul>
+						<li>Банки и финансы</li>
+						<li>Туризм</li>
+						<li>Обучение</li>
+					</ul>
+				</div>
 
-			<button class="button button_full button_modal">Хочу приложение</button>
+				<button class="button button_full button_modal">Хочу приложение</button>
+			</div>
 		</div>
 	</div>
 
@@ -262,9 +272,33 @@
 					pagination: '.swiper-pagination',
 					paginationClickable: true
 				})   
-			}    
+			} 
+
+//ajax обработчик формы отправки обратной связи		
+$('#send_request').submit(function () {
+
+		 // Получение ID формы
+		 var formID = $(this).attr('id');
+		 // Добавление решётки к имени ID
+		 var formNm = $('#' + formID);
+		 $.ajax({
+		 	type: "POST",
+		 	url: 'sendmail.php',
+		 	data: formNm.serialize(),
+		 	success: function (data) {
+		 // Вывод текста результата отправки
+		 $(formNm).html(data);
+		},
+		error: function (jqXHR, text, error) {
+		 // Вывод текста ошибки отправки
+		 $(formNm).html(error);
+		}
+	});
+		 return false;
 		});
-	</script>
+});			
+
+</script>
 
 </body>
 </html>
