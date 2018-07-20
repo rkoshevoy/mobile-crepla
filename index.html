@@ -21,7 +21,7 @@
 				<h1 class="modal_main_h">Оставьте заявку</h1>
 				<p>Для получения консультации и обсуждения проекта</p>
 				<div class="close"></div>
-				<form id="send_request">               
+				<form id="send_request">
 					<div>
 						<label>Ваше имя:
 							<input type="text" name="name" placeholder="Ваше имя:" required pattern="^[A-Za-zА-Яа-яЁё\s-]{1,50}" title="допускаются буквы русского и латинского алфавита">
@@ -30,7 +30,7 @@
 							<input type="email" name="email" placeholder="Ваш email:" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
 						</label>
 						<label>Ваш телефон:
-							<input type="text" name="tel_modal" placeholder="Ваш телефон:" value="+" minlength="11" maxlength="20" pattern="\+\d*" 
+							<input type="text" name="tel_modal" placeholder="Ваш телефон:" value="+" minlength="11" maxlength="20" pattern="\+\d*"
 							title="Введите телефон в международном формате, начиная с символа +">
 						</label>
 						<span class="tel_comment">* заполните это поле, если вы пользуетесь WhatsApp, Viber или Telegram</span>
@@ -48,7 +48,7 @@
 						<label for="chkbox_mob_apps" class="chkbox_label">Мобильные приложения</label>
 					</div>
 					<button class="submit" name="submit" type="submit">Начать крутой проект!</button>
-					<input type="hidden" name="takes_used_button" id="takes_used_button">                    
+					<input type="hidden" name="takes_used_button" id="takes_used_button">
 				</form>
 			</div>
 		</div>
@@ -95,7 +95,7 @@
 			</header>
 
 			<div class="advantages">
-				<div class="wrapper">	
+				<div class="wrapper">
 					<h1 class="animated fadeInUp">Разрабатываем мобильные приложения для Android & iOS</h1>
 
 					<div class="advantage_row animated fadeInUp">	<p>Спроектируем, разработаем, опубликуем бизнес-приложение или стартап.</p>
@@ -104,12 +104,12 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="dignity">
 		<div class="wrapper">
-			<div class="content hidden">
+			<div class="content">
 				<img src="images/phone.png" alt="iPhone">
-				
+
 				<div class="phone-slider">
 					<div class="swiper-container swiper1">
 						<div class="swiper-wrapper">
@@ -173,7 +173,7 @@
 
 	<div class="clients">
 		<div class="wrapper">
-			<div class="content hidden">
+			<div class="content">
 				<h2>Для чего подойдёт приложение?</h2>
 
 				<div class="forwhat">
@@ -206,7 +206,7 @@
 
 	<div class="results">
 		<div class="wrapper">
-			<div class="content hidden">
+			<div class="content">
 				<h2>Преимущества приложения</h2>
 
 				<div class="result result1">Появляются<br>новые клиенты</div>
@@ -219,7 +219,7 @@
 
 	<footer class="footer" id="contacts">
 		<div class="wrapper">
-			<div class="content hidden">
+			<div class="content">
 				<h2>Оставьте заявку на Мобильное приложение сейчас<br><u>и получите landing page в подарок</u></h2>
 				<button class="button button_full button_modal">Заказать консультацию специалиста</button>
 				<p>Или свяжитесь с нами</p>
@@ -263,7 +263,7 @@
 			var mySwiper1 = new Swiper ('.swiper1', {
 				loop: true,
 				autoplay: 3000
-			}) 
+			})
 
 			if (screen.width < 1200) {
 				var mySwiper2 = new Swiper ('.swiper2', {
@@ -271,10 +271,10 @@
 					autoplay: 3000,
 					pagination: '.swiper-pagination',
 					paginationClickable: true
-				})   
-			} 
+				})
+			}
 
-//ajax обработчик формы отправки обратной связи		
+//ajax обработчик формы отправки обратной связи
 $('#send_request').submit(function () {
 
 		 // Получение ID формы
@@ -296,7 +296,7 @@ $('#send_request').submit(function () {
 	});
 		 return false;
 		});
-});			
+});
 
 </script>
 
